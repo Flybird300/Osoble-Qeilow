@@ -1,0 +1,233 @@
+.app__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 2rem 4rem;
+    z-index: 10;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.app-logo h1 {
+    color: #fff;
+    font-family: 'Lusitana', serif;    
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    width: 100%;
+
+
+}
+.app__ul{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+   list-style: none;
+   z-index: 10;
+
+}
+.app__li {
+  cursor: pointer;
+  margin: 0 1rem;
+  
+
+}
+li:hover {
+  border-bottom: 1px solid white;
+  transform: scale(0.95);
+}
+
+.app__ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Amiko', sans-serif;
+}
+
+.switchdiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-right: 0rem;
+
+    z-index: 100;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #D9D9D9;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
+  .app-ham {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 0rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+ .app__navbar-smallscreen_links a {
+   text-decoration: none;
+ }
+
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  .app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+  animation: slideinright 0.4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color:#192f80;
+    transition: 1s ease;
+    z-index: 100;
+    
+}
+
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color:#0C0F4A;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    z-index: 100;
+    
+}
+
+.app__navbar-smallscreen_links {
+    margin-top: -8rem;
+    list-style: none;
+    flex-direction: column;
+    
+  }
+@keyframes slideinright {
+  from {
+    transform: translateX(300px);
+    
+}
+to {
+  transform: translateX(0);
+}
+ 
+}
+
+.app__navbar-smallscreen_links a {
+    cursor:pointer;
+    color:#fff;
+    font-size: 1.4rem;
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.app__navbar-smallscreen_links li {
+    margin-top: 2rem;
+
+}
+
+
+
+@media screen and (min-width: 2000px) {
+  .logo {
+      width: 210px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  
+
+ 
+}
+
+@media screen and (max-width: 702px) {
+  .app__ul{
+    display: none;
+  }
+ 
+  .app__navbar-smallscreen {
+    display: flex;
+  }
+  .app__navbar-smallscreen_links {
+    margin-right: 1rem;
+  }
+  .app__navbar{
+    margin: 2rem 3rem;
+  }
+}
+@media sceen and (max-width: 600px) {
+  .app__navbar {
+    display: flex;
+  }
+}
