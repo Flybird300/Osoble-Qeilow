@@ -1,0 +1,84 @@
+.app--footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+}
+.flex-start {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.432);
+    padding: 40px 0px;
+}
+.flex-start h2 {
+    color: var(--White, #95a7c2);
+    font-family: 'Kalam', cursive;
+    font-size: 33px;
+    font-weight: 400;
+    opacity: 0.8;
+  margin-bottom: -1rem;
+
+
+}
+.flex-start h4 {
+    font-family: 'Lusitana', cursive;    
+    text-align: center;
+    font-family: 'Lusitana', cursive;    
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+}
+.flex-start p {
+    color: var(--White, #1c0e35);
+text-align: center;
+font-family: Circular Std;
+font-size: 18px;
+font-weight: 400;
+font-style: italic;
+}
+.object-footer img{
+   width: 27px;
+   margin: 0 0.3rem;
+ 
+   
+}
+.object-footer img:hover {
+    transform: rotate(360deg) scale(1.1);;
+    transition: 3s;
+    opacity: 0.6;
+
+}
+.object-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-start;
+    width: 90%;
+    padding: 0px 26px;
+    overflow: none;
+   
+}
+.object-footer h1 {
+    color: #350d47;
+    font-family: 'Lusitana', cursive;    
+    font-weight: 400;
+    font-size: 38px;
+    width: 100%;
+}
+@media screen and (max-width: 400px) {
+    .flex-start h4 {
+
+        font-size: 25px;
+    }
+    .flex-start p {
+        font-size: 15px;
+    }
+    .object-footer h1 {
+        font-size: 30px;
+    }
+}

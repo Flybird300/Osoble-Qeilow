@@ -1,0 +1,227 @@
+.app__price {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 300px;
+
+}
+.price-textt h2{
+    color: #060a3a;
+    text-align: center;
+    font-family: Amiko;
+    font-size: 40.703px;
+    font-weight: 700;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.price-textt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.price-textt p {
+    color: #838080;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19.093px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 75%;
+}
+.box-group {
+    display: flex;
+   justify-content: space-evenly; 
+    align-items: flex-start;
+}
+.box {
+    display: flex;
+    padding: 38.763px 18.881px 21.458px 17.881px;
+    margin-top: 3rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.127px;
+    background-color: #040513;
+    width: 325.381px;
+    height: 67%;
+    border-radius: 17.881px;
+    background-image:  url(../../assets/frame.png);
+    background-position: 200%;
+    animation: bg-anim 12s infinite;
+    box-shadow: 1px 3.57627px 8.04661px 0px rgba(0, 0, 0, 0.05);
+}
+@keyframes bg-anim {
+    0% {background-position: left;}
+    70% {background-position: right;}
+    100%{background-position: 0;}
+    
+    
+}
+.box h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26.822px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.box h3 {
+    color: #FBF8F8;
+    font-family: Inter;
+    font-size: 34.703px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.box p {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16.093px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24.14px; /* 150% */
+    width: 70%;
+}
+.relative {
+    position: relative;
+    padding-left: 10px;
+    
+}
+.main-price{
+    position: absolute;
+    font-size: 15px;
+    top:0;
+    left: 0px;
+    
+
+}
+.small-price {
+    
+}
+
+.box-one {
+    margin-top: 5rem;
+}
+.box-three {
+    margin-top: 5rem;
+}
+
+.price-info {
+    margin-top: 1rem;
+    width: 88%;
+    height: 55%;
+    border-radius: 3%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    padding: 27px 15px;
+}
+.price-button {
+    padding: 4px 0px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-image: url(../../assets/frame.png);
+    background-position: left;
+    width: 200px;
+    align-self: center;
+    color: #FFF;
+    font-family: Amiko;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 300% */
+    border: 0.4px solid black;
+    
+}
+
+
+.price-text p {
+    color: #191A15;
+    font-family: Inter;
+    font-size: 16.093px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.822px; /* 166.667% */
+}
+.price-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .box-group {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+   
+    .box {
+        display: flex;
+        padding: 38.763px 18.881px 21.458px 17.881px;
+    margin-top: 3rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 14.127px;
+    height: 0px;
+    background-color: #040513;
+    width: 80%;
+    height: 30%;
+    border-radius: 17.881px;
+    background-image:  url(../../assets/frame.png);
+    background-position: 200%;
+    animation: bg-anim 15s infinite;
+    box-shadow: 1px 3.57627px 8.04661px 0px rgba(0, 0, 0, 0.05);
+
+    }
+    .price-info {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .price-text p{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .app__price{
+        padding: 0 0rem;
+
+    }
+    .price-textt h2{
+        color: #060a3a;
+        text-align: center;
+        font-family: Amiko;
+        font-size: 33.703px;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .price-textt p {
+        font-size: 16px;
+        width: 80%;
+    }
+    
+}

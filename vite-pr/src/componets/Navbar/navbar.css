@@ -1,3 +1,4 @@
+
 .app__navbar {
     display: flex;
     justify-content: space-between;
@@ -59,69 +60,18 @@ li:hover {
 }
 
 /* The switch - the box around the slider */
-.switch {
-    font-size: 13px;
-    position: relative;
-    display: inline-block;
-    width: 3.5em;
-    height: 2em;
-    margin-right: 0rem;
 
-    z-index: 100;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    --background: #D9D9D9;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--background);
-    transition: .5s;
-    border-radius: 30px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 1.4em;
-    border-radius: 50%;
-    left: 10%;
-    bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px #fff000;
-    background: var(--background);
-    transition: .5s;
-  }
-  
-  input:checked + .slider {
-    background-color: #522ba7;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px #fff000;
-  }
   .app-ham {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-left: 0rem;
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 50px;
     cursor: pointer;
-    z-index: 1000;
+    
   }
+  
  .app__navbar-smallscreen_links a {
    text-decoration: none;
  }
@@ -143,12 +93,13 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(7, 36, 63);
+    background-position: right;
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 100%;
     height: 100vh;
-    background-color:#192f80;
     transition: 1s ease;
     z-index: 100;
     
@@ -156,15 +107,13 @@ li:hover {
 
 
 .app__navbar-smallscreen_overlay .overlay__close {
-    font-size: 27px;
-    color:#0C0F4A;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 33px;
-    right: 33px;
-    z-index: 100;
+  display: flex;
+  width: 30px;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  height: 30px;
+  cursor: pointer;
     
 }
 
@@ -187,10 +136,10 @@ to {
 
 .app__navbar-smallscreen_links a {
     cursor:pointer;
-    color:#fff;
-    font-size: 1.4rem;
+    color:#000000;
+    font-size: 27px;
     text-align:center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Actor, sans-serif;
 }
 .app__navbar-smallscreen_links li {
     margin-top: 2rem;

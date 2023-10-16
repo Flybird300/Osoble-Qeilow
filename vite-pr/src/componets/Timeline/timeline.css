@@ -2,33 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.app--timelinetwodiv {
 
-    display: none;
-    z-index: 100;
-    
-   
-}
-.yes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.app--timelinetwo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 75vh;
-}
-.head-text-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 1rem;
-
-}
 .timeline {
     width: 90%;
   
@@ -38,10 +12,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 110vh;
-    margin-bottom: 100px;
+    height: 120vh;
+    
     position: relative;
-    background-image: url(../../assets/group.png);
+  
+   
+    background: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat:repeat-y;
+ 
 }
 
 .head-text {
@@ -49,54 +29,20 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    margin: 0 6rem;
+    margin: 0 4rem;
     margin-bottom: 4rem;
 }
 .head-text h1 {
-    color: #040513;
+    color: #000000;
     font-family: Actor;
     font-size: 45px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 80px; /* 160% */
 }
-.head-text-two h1 {
-    color: #070930;
-    font-family: Actor;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 55px; /* 160% */
-    
-}
-.head-text-two p {
-    color: rgba(10, 14, 82, 0.8);
-    font-family: Amiko;
-    font-size: 17px;
-    line-height: 27px; /* 200% */
-    margin-left: 1.8rem;
-}
-.eclipp {
-    z-index: 0;
-    position: absolute;
-    left: 10px;
-    opacity: 0.5;
-    top: 100px;
-    display: none;
-}
-.index {
-    z-index: 0;
-}
-.polyy {
-    z-index: 0;
-    position: absolute;
-    left: 220px;
-    opacity: 0.3;
-    display: none;
-    top:0px;
-}
+
 .head-text p {
-    color: rgba(12, 15, 74, 0.80);
+    color: rgba(0, 0, 0, 0.8);
     font-family: Amiko;
     font-size: 18px;
     line-height: 30px; /* 200% */
@@ -105,45 +51,22 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 55px;
+    gap: 135px;
     margin-left: 5rem;
 }
-.one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-
-}
-.one h1 {
-    color: #121724;
-    font-family: Actor;
-    font-size: 21.278px;
-    font-weight: 600;
-    margin-top: 2rem;
-}
-.one p {
-    color: rgba(0, 0, 0, 0.80);
-    font-family: Actor;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 3rem;
-
-}
 .under-text h1 {
-    color: #000;
+    color: #000000;
     font-family: Actor;
     font-size: 21.278px;
-    font-weight: 400;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 .under-text p {
-    color: rgba(0, 0, 0, 0.80);
+    color: rgba(0, 0, 0, 0.8);
     font-family: Actor;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
 }
 @media screen and (max-width: 1150px) {
     
@@ -153,10 +76,9 @@
         margin-bottom: 3rem;
     }
 
-    .under-text {
-    width: 170px;
-    height: 95px;
-    }
+   .under-text p{
+    width: 70%;
+   }
     .app-under {
         gap: 36px;
     }
@@ -165,7 +87,7 @@
 @media screen and (max-width: 900px) {
   
     .app--timeline {
-        height: 70vh;
+        height: 75vh;
     }
     .timeline {
         width: 100%;
@@ -179,35 +101,31 @@
         width: 100%;
 
     }
-    .under-text {
-        height: 140px;
-        width: 120px;
-
+    .under-text h1 {
+        font-size: 18px;
     }
     .head-text {
         margin-left: 2rem;
     }
+    .head-text h1 {
+        font-size: 40px;
+    }
+     
 }
 @media screen and (max-width: 630px) {
     
     .head-text h1 {
         line-height: 62px;
     }
-    .under-text {
-        height: 170px;
-    }
+    
     .app-under {
         gap: 10px;
     }
-}
-@media screen and (max-width: 415px) {
-    .timelineone {
-        display: none;
+    .under-text h1 {
+        font-size: 16px;
     }
-    .app--timelinetwodiv {
-        display: flex;
-    }
-    .polyy, .eclipp {
-        display: block;
-    }
+
+    .head-text h1 {
+        font-size: 35px;   
+    };
 }

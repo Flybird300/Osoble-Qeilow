@@ -4,7 +4,7 @@ import images from '../../assets/images'
 const Group = () => {
 
     return (
-        <div className='group'>
+        <div className='group' id="service">
         <div className='group-head'>
             <h1>
                 All-in-one package

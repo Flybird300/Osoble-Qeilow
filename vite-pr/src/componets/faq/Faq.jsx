@@ -27,8 +27,8 @@ const Faqs = () => {
 
         <div className='faq-one'>
             <div className='question' onClick={handleClick}>
-                <h3 className=''>How much will my project cost?</h3>
-                <img src={images.faq} alt="faq" />
+                <h3 className=''>How do I get started</h3>
+                <img className={isActive ? 'faq-rotate' :''}src={images.faq} alt="faq" />
             </div>
             
         <div className={isActive ? 'faq-one.active .answer text' :'answer'} >
@@ -42,13 +42,13 @@ const Faqs = () => {
 
         <div className='faq-two'>
             <div className='question' onClick={handleClickk}>
-                <h3 className=''>What is javascript?</h3>
-                <img src={images.faq} alt="faq" />
+                <h3 className=''>Can My website have a booking system for my clients ?</h3>
+                <img className={isActivee ? 'faq-rotate' :''} src={images.faq} alt="faq" />
             </div>
             
         <div className={isActivee ? 'faq-two.active .answer text' :'answer'} >
             <p>
-                blahabladhaudhadadhadhadasudhaudfufbwgbewuvneauveugeguhfofififdnfisfnpdnoanodnodnoa ifnao fowndovnw
+               Yes!  After the website is published you yourself will make a <a className="faq-link"href="">google reserve link</a> (free) which will be linked to Your Website!!
             </p>
         </div>
        </div>
@@ -56,13 +56,14 @@ const Faqs = () => {
 
        <div className='faq-three'>
             <div className='question' onClick={handleClickkk}>
-                <h3 className=''>What is javascript?</h3>
-                <img src={images.faq} alt="faq" />
+                <h3 className=''>How much will monthly maitnece cost?</h3>
+                <img className={isActiveee ? 'faq-rotate' :''} src={images.faq} alt="faq" />
             </div>
             
         <div className={isActiveee ? 'faq-three.active .answer text' : 'answer'} >
             <p>
-                blahabladhaudhadadhadhadasudhaudfufbwgbewuvneauveugeguhfofififdnfisfnpdnoanodnodnoa ifnao fowndovnw
+            Developers charge from around $35 to $5000 per month for maintnece. Depending on your plan Small, Basic, Premium, small being $55 basic being $70 and premium being $85.
+          
             </p>
         </div>
     </div>

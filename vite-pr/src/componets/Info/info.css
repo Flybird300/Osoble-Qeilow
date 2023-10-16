@@ -1,0 +1,77 @@
+.info-info {
+    height: 100%;
+    display: flex;
+    padding: 4rem 6rem;
+    
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}   
+.infoo {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+.infoo p{
+    width: 85%;
+    color: rgba(12, 15, 74, 0.80);
+    font-family: Amiko;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+  
+    margin-bottom: 2.5rem;
+}
+.button-app {
+    animation: bg-anim 12s infinite;
+}
+.infoo h3 {
+    color: #040513;
+font-family: Actor;
+font-size: 33px;
+font-style: normal;
+
+margin-bottom: 1.5rem;
+}
+.info-img { 
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+    
+  }
+  
+
+    
+
+.info-img img {
+  width:100%;
+
+
+}
+@media screen and (max-width: 900px) {
+    .info-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-img img {
+        width: 500px;
+        
+    }
+   
+.info-img img {
+    width:90%;
+  }
+}
+@media screen and (max-width: 700px) {
+    .info-info{
+    padding: 4rem 2rem;
+    }
+    .infoo p{
+        width: 100%;
+    }
+}

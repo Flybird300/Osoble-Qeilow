@@ -14,10 +14,35 @@ import move from './move.png'
 import faq from './faq.svg'
 import frame from './frame.png'
 import ham3 from './ham3.png'
+import chat from './chat.png'
+import sub from './sub.png'
+import send from './send.png'
+import insta from './insta.png'
+import twitter from './twitter.png'
+import greenFrame from './green-frame.png'
+import greenPic from './green-pic.png'
+import redFrame from './red-frame.png'
+import redPic from './red-pic.png'
+import blueFrame from './blue-frame.png'
+import bluePic from './blue-pic.png'
+
+
+
 
 export default {
+    bluePic,
+    blueFrame,
+    redPic,
+    greenFrame,
+    greenPic,
+    redFrame,
+    chat,
+    send,
+    twitter,
+    insta,
     ham3,
-    frame,
+    frame, 
+    sub,  
     faq,
     maint,
     move,

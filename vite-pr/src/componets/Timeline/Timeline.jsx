@@ -5,71 +5,37 @@ const Timeline = () =>{
 
 
     return (
-        <div className='app--timeline'>
+        <div className='app--timeline' id="timeline">
 
             <div className='timelineone'>
 
                 <div className='head-text'>
-                    <h1>Fast and easy process</h1>
-                    <p>This is how we will build you a responsive website. </p>
+                    <h1>Fast and easy Process</h1>
+                    <p>3 to 10 days</p>
                 </div>
                 <img src={images.Timeline} className="timeline"alt="timeline" />
 
                 <div className='app-under'>
                     <div className='under-text'>
-                        <h1>Day 7-17</h1>
-                        <p>Possible to take trips on new engineering architecture</p>
+                        <h1>Design & Preparation</h1>
+                        <p></p>
                     </div>
 
                     <div className='under-text'>
-                        <h1>Day 7-17</h1>
-                        <p>Possible to take trips on new engineering architecture</p>
+                        <h1>Stage 1 Development</h1>
+                        <p></p>
                     </div>
                     <div className='under-text'>
-                        <h1>Day 17-20</h1>
-                        <p>Possible to take trips on new engineering architecture</p>
+                        <h1>Stage 2 Development</h1>
+                        <p></p>
                     </div>
                     <div className='under-text'>
-                        <h1>Next steps..</h1>
-                        <p>Possible to take trips on new engineering architecture</p>
+                        <h1>Customer Interface and Publishment</h1>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div className='index'>
-        <img src={images.poly} className="polyy"alt='el' />
-        <img src={images.elip} className="eclipp"alt='el' />
-        </div>
-        <div className='app--timelinetwodiv'>
-            <div className='app--timelinetow'> 
-
-            <div className='head-text-two'>
-            <h1>Fast and easy process</h1>
-             <p>This is how we will build you a responsive website. </p>            </div>
-           
-            <div className='one'>
-            <h1>Day 7-17</h1>
-                        <p>Possible to take trips on new engineering architecture</p>
-            </div>
-
-            <div className='one'>
-                <h1>Day 7-17</h1>
-                <p>Possible to take trips on new engineering architecture</p>
-            </div>
-
-            <div className='one'>
-            <h1>Day 7-17</h1>
-            <p>Possible to take trips on new engineering architecture</p>
-            </div>
-
-            <div className='one'>
-            <h1>Day 7-17</h1>
-            <p>Possible to take trips on new engineering architecture</p>
-            </div>
-
-
-            </div>
-            </div>
-        </div>
+      </div>
 
     )
 }

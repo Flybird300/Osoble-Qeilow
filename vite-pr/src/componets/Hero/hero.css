@@ -80,45 +80,46 @@
     background-color: white;
     color: #1C2080;
     border: 1px solid black;
+
 }
 .button {
-    padding: 5px 11px;
-    justify-content: center;
-    align-items: center;
+    padding: 8px 11px;
     gap: 10px;
+
     border-radius: 10px;
-    border: none;
-    background: #1C2080;
+    background: #191C78;
+
     color: #FFF;
     font-family: Amiko;
+
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
     line-height: 35px; /* 300% */
-    transition: 0.7s;
-    
+     border: none;
 }
 .buttontwo:hover {
-    background-color: #1C2080;
-    color: white;
+    background-color: white;
+    animation: bg-anim 10s ease-in infinite;
+    color: blue;
 }
 .buttontwo {
-    padding: 6px 14px;
+    padding: 8px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    
-    background: #fff;
-    color: #1C2080;;
+    background: #191C78;
+    background: transparent;
+    color: #fff;
     font-family: Amiko;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px; /* 300% */
     margin-left: 1.6rem;
-    border: 0.7px solid black;
-    transition: 0.7s;
+    transition: 0.5s;
+    border: 0.01px solid #fff;
+    
   
 }
 .buttons {
